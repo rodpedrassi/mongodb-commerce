@@ -1,0 +1,3 @@
+// 2 - Ordene a coleção produtos pela quantidade de lanches vendidos em ordem crescente, mostrando apenas o nome e a quantidade de lanches vendidos
+use("commerce");
+db.produtos.find({}, { vendidos: 1, nome: 1, _id: 0 }).sort({ vendidos: 1 });
